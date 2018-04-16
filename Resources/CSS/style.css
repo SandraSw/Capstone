@@ -1,0 +1,70 @@
+/* General styling */
+
+html {
+  /* insert font type, line height */
+  font-size: 16px;
+}
+
+
+/* General layout for sections, columns, lines and boxes */
+.section {
+  display: flex;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.right {
+  width: 40%;
+  margin: 2rem 0;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.learning {
+  flex-direction: column;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header styling */
+.header {
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 0.05rem solid gray;
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.colmar {
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation span {
+  margin-left: 1rem;
+}
