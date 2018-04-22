@@ -5,12 +5,17 @@ html {
   font-size: 16px;
 }
 
+main, footer {
+  position: relative;
+  top: 4rem;
+}
+
 h1, h2, h4 {
   font-weight: bold;
 }
 
 
-/* General layout for sections, columns, lines and boxes */
+/* General layout for sections, columns and lines */
 .section {
   display: flex;
   width: 100%;
@@ -23,26 +28,71 @@ h1, h2, h4 {
 
 .left {
   width: 60%;
-  margin: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
+}
+
+.left img, .left video{
+  width: 100%;
+  height: auto;
 }
 
 .right {
   width: 40%;
-  margin: 2rem 0;
+  padding: 2rem 0;
 }
 
-.hbox {
-  display: flex;
-  flex-direction: row;
-}
-
-.learning {
-  flex-direction: column;
-}
+ .learning {
+   flex-direction: column;
+ }
 
 .line {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 0 4.5rem;
+}
+
+/* Styling for horizontal boxes */
+.hbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.hbox .image {
+  width: 35%;
+}
+
+.hbox img {
+  width: 100%;
+  height: auto;
+}
+
+.detail {
+  width: 65%;
+  padding: 0 1rem;
+}
+
+.hbox .detail h5 {
+  margin: 0.5rem 0;
+}
+
+.hbox span {
+  color: blue;
+}
+
+/* Styling for vertical boxes */
+.vbox {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.vbox img {
+  width: 100%;
+  height: auto;
 }
 
 /* Header styling */
@@ -77,19 +127,12 @@ h1, h2, h4 {
 
 /* banner styling */
 .banner {
-  position: relative;
-  top: 4rem;
   background-color: lightgrey;
-}
-
-.banner img {
-  width: 100%;
-  height: auto;
 }
 
 .banner .right {
   justify-content: center;
-  margin-right: 10%;
+  padding-right: 10%;
 }
 
 .banner .right h3 {
@@ -101,4 +144,54 @@ h1, h2, h4 {
   color: white;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+/* Practicing section styling */
+.practicing .left h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.lecture {
+  background-color: lightgrey;
+}
+
+.practicing .hbox {
+  border: 0.05rem solid lightgrey;
+}
+
+/* Learning section styling */
+.learning {
+  width: 100%;
+  background-color: lightgrey;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.learning h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.first {
+  margin-bottom: 2rem;
+}
+
+.computer, .business {
+  margin: 0 2rem;
+}
+
+.content {
+  background-color: white;
+  padding: 1rem;
+  top: 0;
+  height: 100%;
+}
+
+.content h4 {
+  padding-bottom: 1rem;
+}
+
+.content h5 {
+  padding-bottom: 0.5rem;
 }
