@@ -3,6 +3,7 @@
 html {
   /* insert font type, line height */
   font-size: 16px;
+  width: 100%;
 }
 
 main, footer {
@@ -41,9 +42,6 @@ h1, h2, h4 {
   padding: 2rem 0;
 }
 
- .learning {
-   flex-direction: column;
- }
 
 .line {
   display: flex;
@@ -152,7 +150,7 @@ h1, h2, h4 {
   margin-bottom: 1.5rem;
 }
 
-.lecture {
+.lecture, .fisma {
   background-color: lightgrey;
 }
 
@@ -172,6 +170,10 @@ h1, h2, h4 {
   text-align: center;
   padding-bottom: 2rem;
 }
+
+ .learning {
+   flex-direction: column;
+ }
 
 .first {
   margin-bottom: 2rem;
@@ -194,4 +196,53 @@ h1, h2, h4 {
 
 .content h5 {
   padding-bottom: 0.5rem;
+}
+
+/* Exhibit section styling */
+.exhibit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 0.05rem solid lightgrey;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.title h2 {
+  display: flex;
+  text-align: center;
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+}
+
+.exhibit .left h4 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* footer styling */
+footer {
+  height: 4rem;
+  /*width: 100%;*/
+}
+
+.copyright, .footer nav {
+  display: flex;
+}
+
+.footer {
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.footer span {
+  margin: 0 0.5rem;
 }
