@@ -5,6 +5,10 @@ html {
   font-size: 16px;
 }
 
+h1, h2, h4 {
+  font-weight: bold;
+}
+
 
 /* General layout for sections, columns, lines and boxes */
 .section {
@@ -46,15 +50,16 @@ html {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  padding: 1rem 1.5rem;
   border-bottom: 0.05rem solid gray;
   position: fixed;
   background-color: white;
+  z-index: 2;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin-left: 1.5rem;
 }
 
 .colmar {
@@ -63,8 +68,37 @@ html {
 
 .navigation {
   display: flex;
+  margin-right: 1.5rem;
 }
 
 .navigation span {
   margin-left: 1rem;
+}
+
+/* banner styling */
+.banner {
+  position: relative;
+  top: 4rem;
+  background-color: lightgrey;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .right {
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.banner .right h3 {
+  margin: 1.5rem 0;
+}
+
+.button {
+  background-color: grey;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;
 }
