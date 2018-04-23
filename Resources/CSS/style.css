@@ -8,6 +8,10 @@ html {
   color: #4A4A4A;
 }
 
+a {
+  text-decoration: none;
+}
+
 main, footer {
   position: relative;
   top: 4rem;
@@ -65,7 +69,6 @@ h5, .hbox span, .button {
   padding: 2rem 0;
 }
 
-
 .line {
   display: flex;
   flex-direction: row;
@@ -100,7 +103,7 @@ h5, .hbox span, .button {
   margin: 0.5rem 0;
 }
 
-.hbox span {
+.hbox a {
   color: blue;
 }
 
@@ -168,9 +171,12 @@ h5, .hbox span, .button {
 
 .button {
   background-color: #4A4A4A;
-  color: #FFFFFF;
   text-align: center;
   padding: 0.5rem 0;
+}
+
+.button a {
+  color: #FFFFFF;
 }
 
 /* Practicing section styling */
