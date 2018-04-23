@@ -1,9 +1,11 @@
 /* General styling */
 
 html {
-  /* insert font type, line height */
   font-size: 16px;
   width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #4A4A4A;
 }
 
 main, footer {
@@ -11,15 +13,36 @@ main, footer {
   top: 4rem;
 }
 
-h1, h2, h4 {
-  font-weight: bold;
+h1, h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 
+h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3, h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+h5, .hbox span, .button {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
 
 /* General layout for sections, columns and lines */
 .section {
   display: flex;
   width: 100%;
+  border: 0.05rem solid #EAEBEC;
 }
 
 .column {
@@ -32,7 +55,7 @@ h1, h2, h4 {
   padding: 2rem 1.5rem;
 }
 
-.left img, .left video{
+.left img, .left video {
   width: 100%;
   height: auto;
 }
@@ -93,75 +116,89 @@ h1, h2, h4 {
   height: auto;
 }
 
+.vbox h5 {
+  font-weight: 100;
+}
+
 /* Header styling */
 .header {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  border-bottom: 0.05rem solid gray;
   position: fixed;
-  background-color: white;
+  background-color: #FFFFFF;
   z-index: 2;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 .colmar {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .navigation {
   display: flex;
-  margin-right: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .navigation span {
-  margin-left: 1rem;
+  padding-left: 1rem;
 }
 
 /* banner styling */
 .banner {
-  background-color: lightgrey;
+  background-color: #D8D8D8;
 }
 
 .banner .right {
   justify-content: center;
-  padding-right: 10%;
 }
 
 .banner .right h3 {
   margin: 1.5rem 0;
 }
 
+.banner h1, .banner h3, .banner span {
+  width: 80%;
+}
+
 .button {
-  background-color: grey;
-  color: white;
+  background-color: #4A4A4A;
+  color: #FFFFFF;
   text-align: center;
   padding: 0.5rem 0;
 }
 
 /* Practicing section styling */
+.practicing {
+  background-color: #F3F5F5;
+}
+
 .practicing .left h2 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 
+.reference {
+  padding-top: 2rem;
+}
+
 .lecture, .fisma {
-  background-color: lightgrey;
+  background-color: #D8D8D8;
 }
 
 .practicing .hbox {
-  border: 0.05rem solid lightgrey;
+  border: 0.05rem solid #EAEBEC;
 }
 
 /* Learning section styling */
 .learning {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #EAEBEC;
   padding: 2rem 0;
   align-items: center;
 }
@@ -184,7 +221,7 @@ h1, h2, h4 {
 }
 
 .content {
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 1rem;
   top: 0;
   height: 100%;
@@ -203,7 +240,7 @@ h1, h2, h4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 0.05rem solid lightgrey;
+  background-color: #F3F5F5;
 }
 
 .title {
@@ -230,8 +267,9 @@ h1, h2, h4 {
 
 /* footer styling */
 footer {
+  display: flex;
   height: 4rem;
-  /*width: 100%;*/
+  background-color: #F3F5F5;
 }
 
 .copyright, .footer nav {
@@ -244,5 +282,5 @@ footer {
 }
 
 .footer span {
-  margin: 0 0.5rem;
+  padding: 0 0.5rem;
 }
