@@ -42,6 +42,16 @@ h5, .hbox span, .button {
   line-height: 1.5rem;
 }
 
+@media only screen and (max-width:1024px) {
+  html {
+    font-size: 12px;
+  }
+
+  .header, .reference, footer {
+    font-size: 1.3rem;
+  }
+}
+
 /* General layout for sections, columns and lines */
 .section {
   display: flex;
@@ -77,6 +87,17 @@ h5, .hbox span, .button {
   padding: 0 4.5rem;
 }
 
+@media only screen and (max-width:818px) {
+  .section, .column, .hbox {
+    width: 100%;
+  }
+
+  .left, .right {
+    padding: 0;
+  }
+}
+
+
 /* Styling for horizontal boxes */
 .hbox {
   display: flex;
@@ -105,6 +126,33 @@ h5, .hbox span, .button {
 
 .hbox a {
   color: blue;
+}
+
+@media only screen and (max-width:818px) {
+  .hbox {
+    flex-direction: column;
+    padding: 1.3rem;
+    width: 100%;
+  }
+
+  .hbox .image, .detail {
+    width: 100%;
+  }
+
+  .hbox img {
+    max-width: 95%;
+    height: auto;
+  }
+
+  .detail {
+    padding-left: 1.3rem;
+    padding-top: 1.3rem;
+  }
+
+  .hbox .detail h5 {
+    padding: 1.3rem 0;
+    margin: 0;
+  }
 }
 
 /* Styling for vertical boxes */
@@ -152,9 +200,35 @@ h5, .hbox span, .button {
   padding-left: 1rem;
 }
 
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width:818px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile span {
+    display: block;
+  }
+
+.logo {
+  height: 2rem;
+}
+  }
+}
+
 /* banner styling */
-.banner {
-  background-color: #D8D8D8;
+.banner div {
+  background-color: #D8D8D8; /*checker pourquoi le gris a disparu*/
 }
 
 .banner .right {
@@ -177,6 +251,39 @@ h5, .hbox span, .button {
 
 .button a {
   color: #FFFFFF;
+}
+
+@media only screen and (max-width:818px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #D8D8D8;
+  }
+
+  .banner h1, .banner h3, .banner span {
+    width: 90%;
+  }
+
+  .banner .right {
+  padding: 2.6rem 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+  .banner .right h3 {
+    padding-top: 2.6rem;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+
+  .button {
+    background-color: #949191;
+    display: flex;
+    height: 2.6rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Practicing section styling */
