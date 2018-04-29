@@ -1,4 +1,4 @@
-/* General styling */
+/* General styling, font family and font-size */
 
 html {
   font-size: 16px;
@@ -52,7 +52,7 @@ h5, .hbox span, .button {
   }
 }
 
-/* General layout for sections, columns and lines */
+/* General styling for sections, columns and lines */
 .section {
   display: flex;
   width: 100%;
@@ -110,7 +110,7 @@ h5, .hbox span, .button {
   width: 35%;
 }
 
-.hbox img {
+.hbox img, .vbox img {
   width: 100%;
   height: auto;
 }
@@ -133,6 +133,7 @@ h5, .hbox span, .button {
     flex-direction: column;
     padding: 1.3rem;
     width: 100%;
+    margin-bottom: 1.3rem;
   }
 
   .hbox .image, .detail {
@@ -140,16 +141,11 @@ h5, .hbox span, .button {
   }
 
   .hbox img {
-    max-width: 95%;
+    width: 95%;
     height: auto;
   }
 
-  .detail {
-    padding-left: 1.3rem;
-    padding-top: 1.3rem;
-  }
-
-  .hbox .detail h5 {
+  .hbox .detail h5, .detail {
     padding: 1.3rem 0;
     margin: 0;
   }
@@ -160,11 +156,6 @@ h5, .hbox span, .button {
   display: flex;
   flex-direction: column;
   width: 25%;
-}
-
-.vbox img {
-  width: 100%;
-  height: auto;
 }
 
 .vbox h5 {
@@ -227,8 +218,8 @@ h5, .hbox span, .button {
 }
 
 /* banner styling */
-.banner div {
-  background-color: #D8D8D8; /*checker pourquoi le gris a disparu*/
+.banner {
+  background-color: #D8D8D8;
 }
 
 .banner .right {
@@ -283,6 +274,7 @@ h5, .hbox span, .button {
     height: 2.6rem;
     justify-content: center;
     align-items: center;
+    font-size: 1.7rem;
   }
 }
 
@@ -308,22 +300,29 @@ h5, .hbox span, .button {
   border: 0.05rem solid #EAEBEC;
 }
 
+@media only screen and (max-width:818px){
+  .practicing .hbox {
+    border: none;
+  }
+
+  .lecture {
+    background-color: #F3F5F5;
+  }
+}
+
 /* Learning section styling */
 .learning {
   width: 100%;
   background-color: #EAEBEC;
   padding: 2rem 0;
   align-items: center;
+  flex-direction: column;
 }
 
 .learning h2 {
   text-align: center;
   padding-bottom: 2rem;
 }
-
- .learning {
-   flex-direction: column;
- }
 
 .first {
   margin-bottom: 2rem;
@@ -348,6 +347,26 @@ h5, .hbox span, .button {
   padding-bottom: 0.5rem;
 }
 
+@media only screen and (max-width:818px) {
+.learning {
+    width: 100%;
+    padding: 2.6rem 1.3rem;
+    background-color: #F3F5F5;
+}
+
+.learning ul {
+  width: 95%;
+}
+
+  .learning li {
+    display: block;
+    padding: 1.3rem 1.3rem 2rem 1.3rem;
+    background-color: #D8D8D8;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+}
+
 /* Exhibit section styling */
 .exhibit {
   width: 100%;
@@ -361,6 +380,17 @@ h5, .hbox span, .button {
   width: 100%;
   justify-content: center;
   padding-top: 2rem;
+}
+
+@media only screen and (max-width:818px) {
+  .exhibit {
+    background-color: #F3F5F5;
+    padding-bottom: 2rem;
+  }
+  .title {
+    padding-top: 2.6rem;
+    padding-bottom: 1.3rem;
+  }
 }
 
 .title h2 {
@@ -387,6 +417,16 @@ footer {
 
 .copyright, .footer nav {
   display: flex;
+}
+
+@media only screen and (max-width:818px) {
+  footer .desktop {
+    display: none;
+  }
+
+  .footer {
+    padding: 1.3rem;
+  }
 }
 
 .footer {
